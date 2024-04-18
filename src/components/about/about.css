@@ -116,6 +116,7 @@
     font-weight: 900;
     color: crimson;
     cursor: pointer;
+    width: 120px;
 }
 a{
     text-decoration: none;
