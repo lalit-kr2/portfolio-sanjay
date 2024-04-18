@@ -14,7 +14,6 @@ const Testimonials = () => {
     {
       id: 1,
       name: "Lalit Kumar",
-      jobProfile: "Backend Developer",
       image: Pic4,
       message:
         "Sanjay's expertise in digital marketing is truly commendable. His profound understanding of SEO, SMO, and PPC strategies has been pivotal in our projects' success. Sanjay's insights into online marketing trends and his ability to tailor strategies to our business needs have significantly boosted our online presence and revenue. His collaborative approach and dedication to delivering results make him an invaluable member of our team. I highly recommend Sanjay for his exceptional skills in digital marketing.",
@@ -22,7 +21,6 @@ const Testimonials = () => {
     {
       id: 2,
       name: "Jaizib Zaidi",
-      jobProfile: "Frontend Developer",
       image: Pic1,
       message:
         "Sanjay's expertise in digital marketing and SEO brings a fresh perspective to our projects. His deep understanding of online strategies has been invaluable in optimizing our web presence and driving traffic to our platforms. Sanjay's positive attitude and collaborative approach make him a pleasure to work with. I highly recommend Sanjay for his outstanding contributions in enhancing our online visibility and driving business growth.",
@@ -30,7 +28,6 @@ const Testimonials = () => {
     {
       id: 3,
       name: "Ritik Pathak",
-      jobProfile: "PHP Developer",
       image: Pic2,
       message:
         "Sanjay's guidance and expertise in digital marketing have been instrumental in my professional development. His insights into SEO and online advertising have broadened my understanding and improved my skills as a developer. Sanjay's patient guidance and clear communication style make complex concepts easy to grasp. I'm grateful for Sanjay's mentorship and highly recommend him to anyone seeking to expand their knowledge in digital marketing and SEO.",
@@ -38,7 +35,6 @@ const Testimonials = () => {
     {
       id: 4,
       name: "Sakshi Gupta",
-      jobProfile: "QA Tester / QA Analyst",
       image: Pic3,
       message:
         "Collaborating with Sanjay has been a rewarding experience for our QA team. His knowledge of SEO and digital marketing principles ensures that our products meet the highest standards of visibility and performance. Sanjay's dedication to delivering top-notch solutions and his receptiveness to feedback make him an asset to any project. I confidently endorse Sanjay for his unwavering commitment to achieving online success for our projects.",
