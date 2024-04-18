@@ -1,0 +1,186 @@
+.a{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.a-bg {
+    width: 20px;
+    height: 100%;
+    background-color: #59b256;
+    position: absolute;
+  }
+.a-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+.a-right{
+    flex: 1
+}
+.a-card.bg{
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    background-color: #333;
+}
+.a-card{
+    width: 60%;
+    height: 70vh;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.a-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.a-award-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+}
+.a-title{
+    font-weight: 400;
+}
+.a-sub{
+    margin: 20px 0px;
+}
+.a-desc{
+    font-weight: 300;
+}
+.a-desc-mobile{
+    font-weight: 300;
+    display: none;
+}
+.a-award{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.a-award-title-ts{
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid #8aedec;
+    width: 25%;
+    color: #8aedec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.a-award-title-dms{
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid #8aedec;
+    width: 35%;
+    color: #8aedec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.a-skill-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.a-skill-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 5px;
+    background-color: #555;
+    border-radius: 5px;
+    margin: 0px 5px 5px 0px;
+    font-size: 14px;
+}
+.skill-img{
+    background-color: #8aedec;
+    padding: 1px 1px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.a-resume {
+    padding: 5px;
+    margin-right: 70px;
+    border-radius: 8px;
+    border: 5px solid crimson;
+    font-size: 20px;
+    font-weight: 900;
+    color: crimson;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.light-title{
+    color: #222;
+    border: 2px solid #222;
+
+}
+.light-skill-item{
+    background-color: #999;
+}
+.light-img{
+    background-color:gainsboro;
+}
+
+@media screen and (max-width: 480px){
+    .a{
+      flex-direction: column;
+      text-align: center;
+      margin: 50px 0px;
+      height: 900px;
+    }
+    .a-left{
+      width: 100%;
+    }
+    .a-card{
+        height: 30vh;
+    }
+    .a-card.bg{
+      display: none;
+    }
+    .a-right{
+        padding: 20px;
+    }
+    .a-desc{
+        display: none;
+    }
+    .a-desc-mobile{
+        display: block;
+    }
+    /* .a-award{
+        flex-direction: column;
+    } */
+    .a-award-title{
+        width: 50%;
+    }
+    .a-award-title-ts{
+        width: 41%;
+    }
+    .a-award-title-dms{
+        width: 53%;
+    }
+    .a-skill-item{
+        font-size: 10px;
+        margin: 2px;
+    }
+    .a-award-desc{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .a-resume{
+        font-size: 16px;
+        width: 50%;
+    }
+    
+  }

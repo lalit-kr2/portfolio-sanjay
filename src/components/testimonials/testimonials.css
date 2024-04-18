@@ -1,0 +1,253 @@
+/* .tm {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tm-bg {
+  width: 20px;
+  height: 100%;
+  background-color: #59b256;
+  position: absolute;
+  left: 0;
+}
+.tm-wrapper {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left,
+.right {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.left-arrow {
+  filter: invert(1);
+  height: 30%;
+  cursor: pointer;
+}
+.middle {
+  flex: 5;
+  height: 60%;
+  width: 443px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: crimson;
+  border-radius: 30px;
+  letter-spacing: 1px;
+}
+*/
+.tm-message {
+  padding: 20px;
+  flex: 2;
+  font-weight: 300;
+  text-align: center;
+}
+.tm-person {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.person-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.tm-person .name {
+  font-size: 30px;
+  font-weight: 300;
+}
+.tm-person .job-profile {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/*
+.right-arrow {
+  filter: invert(1);
+  height: 30%;
+  cursor: pointer;
+  rotate: 180deg;
+} */
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden !important;
+  position: relative !important;
+}
+.wrapper {
+  overflow: hidden;
+  height: 100vh;
+  transition: 0.5s all linear;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tm-arrows {
+  position: absolute;
+  top: 50%;
+  background: transparent !important;
+  height: 60px;
+  border: 0;
+  cursor: pointer;
+  transition: ease 0.3s all;
+  outline: none;
+}
+.prev {
+  left: 0;
+}
+.prev:hover {
+  opacity: 0.7;
+  left: -10px;
+}
+
+.next {
+  right: 0;
+}
+.next:hover {
+  right: -10px;
+  opacity: 0.7;
+}
+
+.dots-container {
+  display: flex;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: auto;
+  text-align: center;
+  left: 50%;
+  bottom: 9px;
+  transform: translateX(-50%);
+  z-index: 10;
+  list-style-type: none;
+  font-size: 50px;
+}
+li {
+  display: inline-block;
+  padding: 15px;
+}
+.active button {
+  color: #00d8ff;
+}
+.dot-button {
+  background-color: transparent !important;
+}
+.span{
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #777;
+}
+.light-mode-dot {
+  color: #777;
+}
+
+.button {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+.button:hover {
+  text-decoration: none;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.toggle-play {
+  background-color: transparent !important;
+  border: none;
+  height: auto;
+  position: absolute;
+  width: auto;
+  right: 5%;
+  bottom: 9px;
+  color: #3d3d3d;
+  z-index: 1000000;
+}
+.toggle-play:hover {
+  text-decoration: none;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.each-slide {
+  width: 60vw;
+  height: 50vh;
+  float: left;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-color: transparent;
+  margin: 50px 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: crimson;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+h1.tm-heading {
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: -100px;
+}
+
+@media screen and (max-width: 480px) {
+  .slider{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .wrapper{
+    height: 100%;
+  }
+  h1.tm-heading{
+    margin-bottom: 0;
+  }
+  .each-slide {
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px;
+    font-size: 14px;
+    height: 85%;
+  }
+  .tm-message {
+    padding: 10px;
+    margin: 0px 10px;
+  }
+  .person-img {
+    width: 100px;
+    height: 100px;
+  }
+  .prev {
+    display: none;
+  }
+  .next {
+    display: none;
+  }
+  .tm-person .name {
+    font-size: 18px;
+    font-weight: 300;
+}
+}
